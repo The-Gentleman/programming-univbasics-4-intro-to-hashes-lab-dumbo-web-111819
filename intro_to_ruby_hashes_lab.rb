@@ -37,17 +37,5 @@ def update_counting_hash(hash, key)
  else 
   hash[key] = 1
  end
+ 
 end
- Failure/Error: expect(update_counting_hash({},'hello')).to eq({'hello' => 1})
-
-       expected: {"hello"=>1}
-            got: 1
-
-       (compared using ==)
-
- Failure/Error: expect(update_counting_hash({count: 5},:count)).to eq({count: 6})
-
-       expected: {:count=>6}
-            got: 6
-
-       (compared using ==)
